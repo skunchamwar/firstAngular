@@ -1,0 +1,20 @@
+﻿
+<div class="container">
+    <h2>View 2</h2>
+    Name: <br />
+        <input type="text" data-ng-model="filter.city" />
+    <br />
+    <ul>
+        <li data-ng-repeat="person in friends | orderBy:'city' | filter:filter.city"> {{ person.name | uppercase }} - {{person.city}} </li>
+    </ul>
+
+    Friend Name: <br />
+    <input type="text" data-ng-model="newFriend.name" />
+    <br />
+    Friend City: <br />
+    <input type="text" data-ng-model="newFriend.city" />
+    <br />
+    <button data-ng-click="addFriend()">Add Customer</button>
+
+    <a href="#/view1">View1</a>
+</div>

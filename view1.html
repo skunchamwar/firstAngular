@@ -1,0 +1,10 @@
+﻿
+<div class="container">
+    <h2>View 1</h2>
+    Name: <input type="text" data-ng-model="filter.name" />
+    <ul>
+        <li data-ng-repeat="person in friends | orderBy:'city' | filter:filter.name"> {{ person.name | uppercase }} - {{person.city}} </li>
+    </ul>
+
+    <a href="#/view2" >View2</a>
+</div>
